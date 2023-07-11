@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .cal-outer {
+            width: 70vmin;
+            height: 70vh;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px 3px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            background-color: black;
+            padding: 8px;
+        }
+
+        #display {
+            border: 1px solid;
+            width: 95%;
+            height: 14vh;
+            margin: 5px;
+            font-size: 30px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns:16vmin 16vmin 16vmin 16vmin;
+            gap:1vmin 1vmin;
+        }
+        button{
+            border:none;
+            background-color: black;
+            color: white;
+            height: 9.5vh;
+            font-size: 5vmin;
+        }
+        .rgt-btn{
+            border-radius: 50%;
+            background-color:  #49494999;
+        }
+        #equal-symbol{
+            background-color: rgba(79, 27, 163, 0.774);
+        }
+        #clear{
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cal-outer">
+        <div>
+            <input type="text" id="display"  name="display">
+        </div>
+        <div class="grid">
+            <button id="clear">AC</button>
+            <button id="cut">C</button>
+            <button>%</button>
+            <button class="rgt-btn">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="rgt-btn">*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="rgt-btn">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="rgt-btn">+</button>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="rgt-btn " id="equal-symbol">=</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
